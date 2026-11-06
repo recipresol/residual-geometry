@@ -1,0 +1,31 @@
+[project]
+name = "residual-geometry"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "recipresol", email = "93782793+recipresol@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "nnsight>=0.8.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "plotly>=7.1.0",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "transformers>=5,<6",
+]
+
+[project.scripts]
+residual-geometry = "residual_geometry:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
